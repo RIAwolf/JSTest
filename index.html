@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <script src="src/script.js" type="text/javascript" language="JavaScript"></script>
+</head>
+<body>
+<div class="calc-container">
+    <table>
+        <tr>
+            <td colspan="4" id="output"></td>
+        </tr>
+        <tr>
+            <td onclick="handleInput('7')">7</td>
+            <td onclick="handleInput('8')">8</td>
+            <td onclick="handleInput('9')">9</td>
+            <td onclick="handleInput('/')" class="action">/</td>
+        </tr>
+        <tr>
+            <td onclick="handleInput('4')">4</td>
+            <td onclick="handleInput('5')">5</td>
+            <td onclick="handleInput('6')">6</td>
+            <td onclick="handleInput('*')" class="action">*</td>
+        </tr>
+        <tr>
+            <td onclick="handleInput('1')">1</td>
+            <td onclick="handleInput('2')">2</td>
+            <td onclick="handleInput('3')">3</td>
+            <td onclick="handleInput('-')" class="action">-</td>
+        </tr>
+        <tr>
+            <td onclick="handleInput('0')" colspan="2">0</td>
+            <td onclick="handleInput('.')">,</td>
+            <td onclick="handleInput('+')" class="action" rowspan="2">+</td>
+
+        </tr>
+        <tr>
+            <td onclick="handleInput('=')" colspan="3" class="equals">=</td>
+        </tr>
+    </table>
+    <table id="history"></table>
+</div>
+
+</body>
+</html>
